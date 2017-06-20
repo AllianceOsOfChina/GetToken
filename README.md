@@ -30,7 +30,7 @@ TokenManager.getInstance(this).getTokenById(RONG_KEY, RONG_SECRET, "rongcloudget
 
 ## API
 
-Mothed | param1 | param2 | param3 | param4 | param5 | param6 | param7
+Mothed | param1 | param2 | param3 | param4 | param5 | param6 
 ----|------|---- | ---- | ---- | ---- | ---- | ----
 getTokenById | String:appKey  | String:appSecret | String:userId | OnResultTokenListener | xxxx | xxxx 
 getTokenByUserInfo | String:appKey  | String:appSecret | String:userId | String:name | String:portraitUri | OnResultTokenListener 
