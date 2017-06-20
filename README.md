@@ -30,10 +30,11 @@ TokenManager.getInstance(this).getTokenById(RONG_KEY, RONG_SECRET, "rongcloudget
 
 ## API
 
-方法 | 参数1 | 参数2 | 参数3 | 参数4 | 参数5 | 参数6 |
-----|------|-------------------------------------|-------------|--------------|-------------—|-----------
-getTokenById | String appkey  | String appSecret |String userId| callback
-getTokenById | String appkey  | String appSecret |String userId|String name|String portraitUri|callback|
+Mothed | param1 | param2 | param3 | param4 | param5 | param6 | param7
+----|------|---- | ---- | ---- | ---- | ---- | ----
+getTokenById | String:appKey  | String:appSecret | String:userId | OnResultTokenListener | xxxx | xxxx 
+getTokenByUserInfo | String:appKey  | String:appSecret | String:userId | String:name | String:portraitUri | OnResultTokenListener 
+
 
 
 
