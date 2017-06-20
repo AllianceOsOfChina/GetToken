@@ -14,19 +14,7 @@ dependencies {
 ## 示例
 
 ``` java
-public class MainActivity extends AppCompatActivity {
-
-    public static final String RONG_KEY = "xxx";// 融云key
-    public static final String RONG_SECRET = "xxx";// 融云密钥 secret
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
-
-    public void getToken(View view) {
-        TokenManager.getInstance(this).getTokenById(RONG_KEY, RONG_SECRET, "rongcloudgettoken", new TokenManager.OnResultTokenListener() {
+TokenManager.getInstance(this).getTokenById(RONG_KEY, RONG_SECRET, "rongcloudgettoken", new TokenManager.OnResultTokenListener() {
             @Override
             public void onResult(TokenResult tokenResult) {
                 if (tokenResult.getCode() == 200) {
@@ -38,10 +26,17 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-    }
-
-}
 ```
+
+## API
+
+方法 | 参数1 | 参数2 | 参数3 | 参数4 | 参数5 | 参数6 |
+----|------|-------------------------------------|-------------|--------------|-------------—|-----------
+getTokenById | String appkey  | String appSecret |String userId| callback
+getTokenById | String appkey  | String appSecret |String userId|String name|String portraitUri|callback|
+
+
+
 
 ## 警告⚠️
 - 建议此种方式只在测试环境使用。
