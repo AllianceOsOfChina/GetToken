@@ -32,7 +32,7 @@ TokenManager.getInstance(this).getTokenById(RONG_KEY, RONG_SECRET, "rongcloudget
 
 Mothed | param1 | param2 | param3 | param4 | param5 | param6 
 ----|------|---- | ---- | ---- | ---- | ---- 
-getTokenById | String:appKey  | String:appSecret | String:userId | OnResultTokenListener | xxxx | xxxx 
+getTokenById | String:appKey  | String:appSecret | String:userId | OnResultTokenListener |  |  
 getTokenByUserInfo | String:appKey  | String:appSecret | String:userId | String:name | String:portraitUri | OnResultTokenListener 
 
 
