@@ -1,6 +1,10 @@
 # GetToken
 不需要依赖服务端直接从 Android 端获取 [融云](http://rongcloud.cn) token 的 Jcenter 
 
+## 关于
+
+[token & appkey & secret](http://www.rongcloud.cn/docs/quick_start.html#development)
+
 ## 使用
 
 ```java
@@ -9,6 +13,12 @@ dependencies {
     compile 'cn.rongcloud.android:getrongcloudtoken:1.0.0'
 
 }
+```
+
+## 权限
+
+```xml
+    <uses-permission android:name="android.permission.INTERNET" />
 ```
 
 ## 示例
